@@ -26,7 +26,7 @@ function generateBuild(){
 var build = generateBuild();
 
 var paths = {
-	scripts: ["src/ondomready.js", "src/polyfills.js", "src/augment.js", "src/holder.js"]
+	scripts: ["src/ondomready.js", "src/polyfills.js", "src/augment.js", "src/query-string.js", "src/holder.js"]
 }
 
 gulp.task('jshint', function () {
