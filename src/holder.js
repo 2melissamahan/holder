@@ -60,13 +60,6 @@ Holder.js - client side image placeholders
 				renderSettings.renderer = App.setup.supportsSVG ? 'svg' : (App.setup.supportsCanvas ? 'canvas' : 'html');
 			}
 
-			//< v2.4 API compatibility
-			if (options.use_canvas) {
-				renderSettings.renderer = 'canvas';
-			} else if (options.use_svg) {
-				renderSettings.renderer = 'svg';
-			}
-
 			var images = getNodeArray(options.images);
 			var bgnodes = getNodeArray(options.bgnodes);
 			var stylenodes = getNodeArray(options.stylenodes);
