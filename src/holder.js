@@ -312,8 +312,15 @@ Holder.js - client side image placeholders
 		};
 		var render = false;
 		var vtab = String.fromCharCode(11);
+
 		var flags = url.replace(/([^\\])\//g, '$1' + vtab).split(vtab);
 		var uriRegex = /%[0-9a-f]{2}/gi;
+
+		if(url.match('^'+options.domain+'/')){
+			var qsRegex = /(\d+\%?x\d+\%?)(?:\/|\/\?)?(.*)$/i;
+			var urlFragment = url.substr(url.indexOf('/')+1);
+		}
+
 		for (var fl = flags.length, j = 0; j < fl; j++) {
 			var flag = flags[j];
 			if (flag.match(uriRegex)) {
