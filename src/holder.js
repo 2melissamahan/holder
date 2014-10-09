@@ -190,12 +190,6 @@ Holder.js - client side image placeholders
 		}
 	};
 
-	//< v2.4 API compatibility
-
-	Holder.add_theme = Holder.addTheme;
-	Holder.add_image = Holder.addImage;
-	Holder.invisible_error_fn = Holder.invisibleErrorFn;
-
 	var App = {
 		settings: {
 			domain: 'holder.js',
